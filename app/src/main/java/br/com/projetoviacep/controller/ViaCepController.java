@@ -26,7 +26,7 @@ public class ViaCepController {
     public CepModel buscarCEP(String cep){
         if(utility.verificarConexao()){
             if(!cep.trim().isEmpty()){
-                if (cepCacheDAO.isCep(cep.trim())) {
+                if (cepCacheDAO.isCep(cep)) {
                     buscarCepCache(cep);
                 } else {
                     buscarCepApi(cep);
