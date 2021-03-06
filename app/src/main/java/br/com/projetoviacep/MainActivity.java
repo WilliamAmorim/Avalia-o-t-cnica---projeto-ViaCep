@@ -8,7 +8,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import java.util.concurrent.ExecutionException;
+
+import br.com.projetoviacep.api.ViaCep;
+import br.com.projetoviacep.common.Utility;
 import br.com.projetoviacep.controller.ViaCepController;
+import br.com.projetoviacep.dao.ViaCepCacheDAO;
 import br.com.projetoviacep.model.CepModel;
 
 public class MainActivity extends AppCompatActivity {
@@ -68,4 +73,5 @@ public class MainActivity extends AppCompatActivity {
             editTextDdd.setText(cepModel.getDdd());
         }
     }
+
 }

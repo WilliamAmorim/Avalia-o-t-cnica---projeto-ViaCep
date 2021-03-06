@@ -18,9 +18,6 @@ public class ViaCepCache extends SQLiteOpenHelper {
     public static final String LOCALIDADE = "localidade";
     public static final String UF = "uf";
     public static final String DDD = "ddd";
-    public static final String IBGE = "ibge";
-    public static final String GIA = "gia";
-    public static final String SIAFI = "siafi";
 
     private static final int VERSAO = 1;
 
@@ -37,10 +34,7 @@ public class ViaCepCache extends SQLiteOpenHelper {
                 + BAIRRO + " text,"
                 + LOCALIDADE + " text,"
                 + UF + " text,"
-                + DDD + " text,"
-                + IBGE + " text,"
-                + GIA + " text,"
-                + SIAFI + " text"
+                + DDD + " text"
                 +")";
         db.execSQL(sqlListas);
     }
