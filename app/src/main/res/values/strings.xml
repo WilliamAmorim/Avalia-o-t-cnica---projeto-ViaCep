@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Projeto ViaCep</string>
+
+    <string name="titulo">Consultar CEP</string>
+    <string name="txtCep">CEP</string>
+    <string name="txtLogradouro">Logradouro</string>
+    <string name="txtComplemento">Complemento</string>
+    <string name="txtLocalidade">Localidade</string>
+    <string name="txtBairro">Localidade</string>
+    <string name="txtUf">UF</string>
+    <string name="txtDdd">DDD</string>
+
+    <string name="buttonConsultar">Consultar</string>
+
+    <string name="SemConexãoInternet">Verifique sua conexão com a internet</string>
+    <string name="preenchaCampos">Preencha o campo cep corretamente</string>
+    <string name="nenhumDado">Nenhum dado encontrado</string>
+</resources>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/text_grande"
+            android:textSize="25sp"
+            android:layout_marginVertical="10dp"
+            android:text="@string/titulo"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editText_cep"
+                style="@style/editText_padrao"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:hint="@string/txtCep"
+                android:inputType="number"
+                android:maxLines="1" />
+
+        <Button
+            style="@style/button_padrao"
+            android:layout_width="wrap_content"
+            android:background="@drawable/card_button"
+            android:id="@+id/button_consultar"
+            android:layout_marginVertical="8dp"
+            android:hint="@string/buttonConsultar"/>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_marginVertical="15dp"
+            android:layout_marginHorizontal="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+        <EditText
+            android:id="@+id/editText_logradouro"
+            style="@style/editText_padrao"
+            android:enabled="false"
+            android:hint="@string/txtLogradouro" />
+
+        <EditText
+            style="@style/editText_padrao"
+            android:enabled="false"
+            android:id="@+id/editText_complemento"
+            android:hint="@string/txtComplemento"/>
+
+        <EditText
+            style="@style/editText_padrao"
+            android:enabled="false"
+            android:id="@+id/editText_bairro"
+            android:hint="@string/txtBairro"/>
+
+        <EditText
+            style="@style/editText_padrao"
+            android:enabled="false"
+            android:id="@+id/editText_localidade"
+            android:hint="@string/txtLocalidade"/>
+
+
+        <EditText
+            style="@style/editText_padrao"
+            android:enabled="false"
+            android:id="@+id/editText_uf"
+            android:hint="@string/txtUf"/>
+
+        <EditText
+            style="@style/editText_padrao"
+            android:enabled="false"
+            android:id="@+id/editText_ddd"
+            android:hint="@string/txtDdd"/>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
