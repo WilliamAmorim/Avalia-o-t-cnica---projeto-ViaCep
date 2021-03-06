@@ -33,8 +33,8 @@ public class ViaCepCacheDAO {
         valores.put(ViaCepCache.IBGE,cepModel.getIbge());
         valores.put(ViaCepCache.DDD,cepModel.getDdd());
         valores.put(ViaCepCache.LOCALIDADE,cepModel.getLocalidade());
-        valores.put(ViaCepCache.SIAFI,cepModel.getLocalidade());
-        valores.put(ViaCepCache.GIA,cepModel.getLocalidade());
+        valores.put(ViaCepCache.SIAFI,cepModel.getSiafi());
+        valores.put(ViaCepCache.GIA,cepModel.getGia());
 
         return valores;
     }
