@@ -48,9 +48,10 @@ public class ViaCepController {
         try {
             viaCep = new ViaCep(cep);
             cepModel = viaCep.execute().get();
-            cepModel.setCep(cep);
-            cepCacheDAO.novoCEP(cepModel);
-            if(cepModel == null){
+            if(cepModel != null) {
+                cepModel.setCep(cep);
+                cepCacheDAO.novoCEP(cepModel);
+            }else{
                 utility.showToast(utility.getString("nenhumDado"));
             }
         } catch (ExecutionException e) {
